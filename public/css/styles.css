@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @media (min-width: 361px) {
   .product-container {
+    background-color: red;
     margin-bottom: 10px;
     margin-top: 10px;
-    box-shadow: ​0px ​​0px​​ 10px​​ rgb(100,100,100);
+    box-shadow: 0 0 10px rgb(100, 100, 100);
   }
+}
 
+@media (max-width: 360px) {
+  .descriptions {
+    font-size: 16px;
+    display: none;
+  }
 }
 
 * {
@@ -21,7 +28,6 @@ body header {
 
 body {
   font-family: Roboto;
-
 }
 
 .titulares {
@@ -82,12 +88,13 @@ ul {
 .article-container {
   width: 90%;
   margin: auto;
-  padding:20px;
+  padding: 20px;
 }
 /* Entre cada artículo hay una separación de 10 píxeles */
 .product-container {
   margin-bottom: 10px;
   margin-top: 10px;
+  background-color: white;
 }
 
 /* Nos piden que manejemos el logo del envío, el precio, el porcentaje de descuento y 
@@ -101,20 +108,20 @@ la descripción del artículo como elementos de una caja dentro de la
   /* como logro que la imagen quede integrada */
   text-align: left;
 }
- .photo{
-  width:100%
+.photo {
+  width: 100%;
 }
 
-/* para ponerle el circulo al incono del truck */
+/* diseño del truck */
 section i {
   background-color: white;
   color: #39b54a;
   border-radius: 50%;
   height: auto;
   border: solid 1px green;
-  padding: 15px;
-  width: 45px;
-  /* como alinear a la izquierda arriba? */
+  padding: 8px;
+  width: 50px;
+  height: 50px;
 }
 
 /* footer*/
