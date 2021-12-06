@@ -1,16 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @media (min-width: 361px) {
   .product-container {
-    background-color: red;
     margin-bottom: 10px;
     margin-top: 10px;
     box-shadow: 0 0 10px rgb(100, 100, 100);
-  }
+    background-color: white;
+},
+
 }
 
 @media (max-width: 360px) {
   .descriptions {
     font-size: 16px;
+    display: none;
+  }
+  .enlaces{
     display: none;
   }
 }
@@ -60,7 +64,7 @@ body {
   text-align: center;
 }
 
-ul {
+.listaEnlaces {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
