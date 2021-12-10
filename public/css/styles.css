@@ -1,25 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-@media (min-width: 361px) {
-  .product-container {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    box-shadow: 0 0 10px rgb(100, 100, 100);
-    background-color: white;
-},
 
-}
-
-@media (max-width: 360px) {
-  .descriptions {
-    font-size: 16px;
-    display: none;
-  }
-  .enlaces{
-    display: none;
-  }
-}
 
 * {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 body header {
@@ -29,7 +13,17 @@ body header {
   color: black;
   padding-bottom: 20px;
 }
-
+/* imagenes */
+.imagenprincipal{
+  width: 100%;
+}
+/* preguntar a diego */
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+}
 body {
   font-family: Roboto;
 }
@@ -42,9 +36,13 @@ body {
 .discount {
   color: #39b54a;
   font-size: 16px;
+  /* desafio flex */
+  width: 70%;
 }
 .prices {
   font-size: 18px;
+  /* desafio flex */
+  width: 30%;
 }
 .descriptions {
   font-size: 16px;
@@ -69,16 +67,25 @@ body {
   padding: 0px;
   margin: 0px;
 }
+.listaEnlaces a{
+text-decoration: none;
+color: black;
+}
 
 .burger-menu {
   color: white;
-  background-color: #1259c3;
+  background-color: #03264c;
   margin: auto;
+  margin-bottom: 10px;
   border-radius: 5px;
   font-size: 20px;
-  text-align: center;
-  width: 45px;
-  padding: 10px 0px;
+  width: 40px;
+  height: 40px;
+  /* flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 /* ejercicio diseño adaptativo */
@@ -98,7 +105,11 @@ body {
 .product-container {
   margin-bottom: 10px;
   margin-top: 10px;
-  background-color: white;
+  padding: 15px;
+  /* Flexbox */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 /* Nos piden que manejemos el logo del envío, el precio, el porcentaje de descuento y 
@@ -107,9 +118,6 @@ la descripción del artículo como elementos de una caja dentro de la
   width: auto;
   background-color: white;
   border-top: solid 1px #ebebeb;
-  padding: 15px;
-  /* como hago que cada producto tenga la linea solida? le tengo que hacer a cada uno un div */
-  /* como logro que la imagen quede integrada */
   text-align: left;
 }
 .photo {
@@ -118,15 +126,35 @@ la descripción del artículo como elementos de una caja dentro de la
 
 /* diseño del truck */
 section i {
-  background-color: white;
+  display: block;
+  font-size: 16px;
+  padding: 4px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  right: 30px;
+  top: -15px;
+  color: #39b54a;
+}
+/* background-color: white;
   color: #39b54a;
   border-radius: 50%;
   height: auto;
   border: solid 1px green;
-  padding: 8px;
+  padding: 5px;
   width: 50px;
-  height: 50px;
-}
+  height: 50px; */
+
+/* desafio de flex box ---------------------*/
+
+/* .flex-prices-discount {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+  } */
 
 /* footer*/
 
@@ -141,4 +169,32 @@ footer i {
   margin-bottom: 10px;
   color: #1259c3;
   /* como hacer que los textos queden pegados y no tan separados? */
+}
+/* le da sombra a los articulos cuando se expande */
+@media (min-width: 361px) {
+  .product-container {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgb(100, 100, 100);
+    background-color: white;
+  }
+}
+/* desaparece la descripcion, los enlaces y le da al burger margin top */
+@media (max-width: 360px) {
+  .descriptions {
+    font-size: 16px;
+    display: none;
+  }
+  .enlaces {
+    display: none;
+  }
+  .burger-menu {
+    margin-top: 20px;
+  }
+}
+/* desaparece burger para tablet y desktop */
+@media (min-width: 361px) {
+  .burger-menu {
+    display: none;
+  }
 }
