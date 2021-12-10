@@ -11,19 +11,22 @@ body header {
   font-size: 12px;
   background-color: #eac926;
   color: black;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 /* imagenes */
 .imagenprincipal{
   width: 100%;
 }
-/* preguntar a diego */
+
 .banner {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 100%;
 }
+
+/* --------- */
+
 body {
   font-family: Roboto;
 }
@@ -91,6 +94,8 @@ color: black;
 /* ejercicio diseño adaptativo */
 /* Debemos centrar la sección main */
 .main-container {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   background-color: #ebebeb;
 }
