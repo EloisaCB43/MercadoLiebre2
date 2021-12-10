@@ -11,11 +11,11 @@ body header {
   font-size: 12px;
   background-color: #eac926;
   color: black;
-  /* padding-bottom: 20px; */
 }
 /* imagenes */
 .imagenprincipal{
-  width: 100%;
+  width: 50%;
+  
 }
 
 .banner {
@@ -38,14 +38,13 @@ body {
 }
 .discount {
   color: #39b54a;
-  font-size: 16px;
+  font-size: 1em;
   /* desafio flex */
-  width: 70%;
+  margin-left: 10px;
 }
 .prices {
   font-size: 18px;
   /* desafio flex */
-  width: 30%;
 }
 .descriptions {
   font-size: 16px;
@@ -53,6 +52,7 @@ body {
 
 .barrabuscar {
   margin-left: 5%;
+  width: 50%;
 }
 .search button {
   margin-top: 1px;
@@ -124,14 +124,19 @@ la descripción del artículo como elementos de una caja dentro de la
   background-color: white;
   border-top: solid 1px #ebebeb;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
+
+
 .photo {
   width: 100%;
 }
 
 /* diseño del truck */
-section i {
-  display: block;
+.each-product i {
+  display: flex;
+  align-self: flex-end;
   font-size: 16px;
   padding: 4px;
   width: 30px;
@@ -160,6 +165,11 @@ section i {
     flex-direction: row;
     align-content: flex-start;
   } */
+.price-discount{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 /* footer*/
 
@@ -183,6 +193,10 @@ footer i {
     box-shadow: 0 0 10px rgb(100, 100, 100);
     background-color: white;
   }
+
+  /* ¿Qué debemos modificar para que, aplicando Flexbox, solo se vea un artículo si estamos en mobile, dos artículos para tablet y cuatro artículos para la versión desktop? */
+  
+
 }
 /* desaparece la descripcion, los enlaces y le da al burger margin top */
 @media (max-width: 360px) {
