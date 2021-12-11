@@ -6,16 +6,24 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 body header {
   font-family: Roboto;
   font-size: 12px;
   background-color: #eac926;
   color: black;
+  /* flex */
+
 }
+
 /* imagenes */
-.imagenprincipal{
+.imagenprincipal {
   width: 50%;
-  
+}
+
+.img-searchbar {
+  display: flex;
+
 }
 
 .banner {
@@ -36,45 +44,88 @@ body {
   text-align: left;
   color: #666;
 }
+
 .discount {
   color: #39b54a;
   font-size: 1em;
   /* desafio flex */
   margin-left: 10px;
 }
+
 .prices {
   font-size: 18px;
   /* desafio flex */
 }
+
 .descriptions {
   font-size: 16px;
 }
 
-.barrabuscar {
-  margin-left: 5%;
-  width: 50%;
+.img-searchbar-cuotas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
 }
-.search button {
-  margin-top: 1px;
-  padding: 0px;
-  padding-top: 2px;
-  margin-left: 5%;
+
+.barrabuscar {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.barrabuscar input {
+  border: none;
+  width: 100%;
+  border-radius: 5%;
+
+}
+
+.search-icon {
+
+  margin-left: 2%;
+
 }
 
 .cuotas {
+  margin: 10px;
   text-align: center;
+  margin-bottom: 0px;
+}
+
+.cuotas i {
+  margin-right: 5px;
+}
+
+/* enlaces */
+.enlaces-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .listaEnlaces {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   list-style-type: none;
   padding: 0px;
-  margin: 0px;
-}
-.listaEnlaces a{
-text-decoration: none;
-color: black;
+  margin: 10px 0px
 }
 
+.listaEnlaces a {
+  text-decoration: none;
+  color: black;
+}
+
+.listaEnlaces i {
+  margin-left: 5px;
+}
+
+/* Menu hamburguesa */
 .burger-menu {
   color: white;
   background-color: #03264c;
@@ -88,7 +139,7 @@ color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 /* ejercicio diseño adaptativo */
@@ -106,6 +157,7 @@ color: black;
   margin: auto;
   padding: 20px;
 }
+
 /* Entre cada artículo hay una separación de 10 píxeles */
 .product-container {
   margin-bottom: 10px;
@@ -115,6 +167,7 @@ color: black;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  background-color: #fff;
 }
 
 /* Nos piden que manejemos el logo del envío, el precio, el porcentaje de descuento y 
@@ -148,6 +201,7 @@ la descripción del artículo como elementos de una caja dentro de la
   top: -15px;
   color: #39b54a;
 }
+
 /* background-color: white;
   color: #39b54a;
   border-radius: 50%;
@@ -165,7 +219,7 @@ la descripción del artículo como elementos de una caja dentro de la
     flex-direction: row;
     align-content: flex-start;
   } */
-.price-discount{
+.price-discount {
   display: flex;
   flex-wrap: wrap;
 }
@@ -185,8 +239,27 @@ footer i {
   color: #1259c3;
   /* como hacer que los textos queden pegados y no tan separados? */
 }
+
+/* mobile only */
+/* desaparece la descripcion, los enlaces y le da al burger margin top */
+@media (max-width: 482px) {
+  .descriptions {
+    font-size: 16px;
+    display: none;
+  }
+
+  .enlaces-navbar {
+    display: none;
+  }
+
+  .burger-menu {
+    margin-top: 20px;
+  }
+}
+
+/* tablet y desktop */
 /* le da sombra a los articulos cuando se expande */
-@media (min-width: 361px) {
+@media (min-width: 482px) {
   .product-container {
     margin-bottom: 10px;
     margin-top: 10px;
@@ -194,26 +267,62 @@ footer i {
     background-color: white;
   }
 
-  /* ¿Qué debemos modificar para que, aplicando Flexbox, solo se vea un artículo si estamos en mobile, dos artículos para tablet y cuatro artículos para la versión desktop? */
-  
+  /* desaparece burger para tablet y desktop */
+  .burger-menu {
+    display: none;
+  }
+}
+
+/* tablet only */
+
+
+@media only screen and (min-width:482px) and (max-width:768px) {
+
+  .main-article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .cuotas {
+    width: 33%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .imagenprincipal {
+    width: 30%;
+  }
+
+  .barrabuscar {
+    margin: 0px;
+  }
+  .product-container{
+    width: 48%;
+  }
 
 }
-/* desaparece la descripcion, los enlaces y le da al burger margin top */
-@media (max-width: 360px) {
-  .descriptions {
-    font-size: 16px;
-    display: none;
+
+/* desktop */
+@media (min-width:769px) {
+  .main-article {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
   }
-  .enlaces {
-    display: none;
+
+  .imagenprincipal {
+    width: 50%;
+    height: 80px;
   }
-  .burger-menu {
-    margin-top: 20px;
+
+  .img-searchbar-cuotas {
+    flex-wrap: nowrap;
   }
 }
-/* desaparece burger para tablet y desktop */
-@media (min-width: 361px) {
-  .burger-menu {
-    display: none;
-  }
-}
+
+/* ¿Qué debemos modificar para que, aplicando Flexbox, solo se vea un artículo si estamos en mobile, dos artículos para tablet y cuatro artículos para la versión desktop? */
+
+/* ¿Qué debemos modificar para que, aplicando Flexbox, aparezcan dos artículos para tablet? */
+.main-article {}
