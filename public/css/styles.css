@@ -228,8 +228,24 @@ la descripción del artículo como elementos de una caja dentro de la
 /* footer*/
 
 .piePagina {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
+  text-align: center;
+  width: 100%;
+}
+.footer-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 footer i {
@@ -240,6 +256,40 @@ footer i {
   /* como hacer que los textos queden pegados y no tan separados? */
 }
 
+
+/* formularios <<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.login-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  font-weight: lighter;
+  background-color:#ebebeb;
+  width: 100%;
+}
+.login-password{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.username , .password{
+  font-size: 20px;
+  padding: 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+}
+.submit{
+  border: none;
+  padding: 20px;
+  background-color: #1259c3;
+  color: #fff;
+  border-radius: 8px;
+  margin:10px;
+  font-size: 20px;
+}
 /* mobile only */
 /* desaparece la descripcion, los enlaces y le da al burger margin top */
 @media (max-width: 482px) {
@@ -254,6 +304,15 @@ footer i {
 
   .burger-menu {
     margin-top: 20px;
+  }
+  .username , .password{
+    font-size: 12px;
+    padding: 11px;
+
+  }
+  .submit{
+    padding: 14px;
+    font-size: 16px;
   }
 }
 
@@ -271,6 +330,7 @@ footer i {
   .burger-menu {
     display: none;
   }
+  
 }
 
 /* tablet only */
