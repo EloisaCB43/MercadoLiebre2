@@ -12,6 +12,7 @@ body header {
   font-size: 12px;
   background-color: #eac926;
   color: black;
+  padding: 10px 0px;
   /* flex */
 
 }
@@ -281,12 +282,12 @@ footer i {
 }
 
 /* register */
+
 .register-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  border: solid 1px red;
   overflow: auto;
 }
 
@@ -297,30 +298,57 @@ footer i {
   flex-direction: column;
   padding: 20px;
   font-size: 20px;
+  border-radius: 5px;
+  margin: 10px 0px;
 }
-.border-field{
+
+.border-field {
   border: none;
   border-radius: 8px;
   padding: 10px;
   width: 100%;
   background-color: #fff;
 }
-.button-register{
+
+.button-register {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.button-register button{
+
+.button-register button {
   background-color: #1259c3;
   border-radius: 8px;
   border: none;
   padding: 10px;
   color: #fff;
   width: 49%;
-  
 }
-  
 
+.userprofile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.input-profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.interest-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 35px;
+}
+
+.input-interest {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 
 
 
@@ -340,22 +368,12 @@ footer i {
     margin-top: 20px;
   }
 
-  .username,
-  .password {
-    font-size: 12px;
-    padding: 11px;
-
-  }
-
-  .submit {
-    padding: 14px;
-    font-size: 16px;
-  }
+ 
 }
 
 /* tablet y desktop */
 /* le da sombra a los articulos cuando se expande */
-@media (min-width: 482px) {
+@media (min-width: 483px) {
   .product-container {
     margin-bottom: 10px;
     margin-top: 10px;
@@ -373,7 +391,7 @@ footer i {
 /* tablet only */
 
 
-@media only screen and (min-width:482px) and (max-width:768px) {
+@media only screen and (min-width:483px) and (max-width:768px) {
 
   .main-article {
     display: flex;
