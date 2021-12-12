@@ -130,7 +130,6 @@ body {
   color: white;
   background-color: #03264c;
   margin: auto;
-  margin-bottom: 10px;
   border-radius: 5px;
   font-size: 20px;
   width: 40px;
@@ -202,23 +201,8 @@ la descripción del artículo como elementos de una caja dentro de la
   color: #39b54a;
 }
 
-/* background-color: white;
-  color: #39b54a;
-  border-radius: 50%;
-  height: auto;
-  border: solid 1px green;
-  padding: 5px;
-  width: 50px;
-  height: 50px; */
-
 /* desafio de flex box ---------------------*/
 
-/* .flex-prices-discount {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: flex-start;
-  } */
 .price-discount {
   display: flex;
   flex-wrap: wrap;
@@ -236,7 +220,8 @@ la descripción del artículo como elementos de una caja dentro de la
   text-align: center;
   width: 100%;
 }
-.footer-container{
+
+.footer-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -259,39 +244,82 @@ footer i {
 
 /* formularios <<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* login */
-.login-container{
+.login-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   font-weight: lighter;
-  background-color:#ebebeb;
+  background-color: #ebebeb;
   width: 100%;
 }
-.login-password{
+
+.login-password {
   display: flex;
   width: 50%;
   flex-direction: column;
   margin-bottom: 20px;
 }
-.username , .password{
+
+.username,
+.password {
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
   margin: 10px;
   border: none;
   border-radius: 8px;
 }
-.submit{
+
+.submit {
   border: none;
-  padding: 20px;
+  padding: 10px;
   background-color: #1259c3;
   color: #fff;
   border-radius: 8px;
-  margin:10px;
+  margin: 10px;
   font-size: 20px;
 }
 
 /* register */
+.register-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  border: solid 1px red;
+  overflow: auto;
+}
+
+.form-register {
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 20px;
+}
+.border-field{
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  background-color: #fff;
+}
+.button-register{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.button-register button{
+  background-color: #1259c3;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  width: 49%;
+  
+}
+  
 
 
 
@@ -311,12 +339,15 @@ footer i {
   .burger-menu {
     margin-top: 20px;
   }
-  .username , .password{
+
+  .username,
+  .password {
     font-size: 12px;
     padding: 11px;
 
   }
-  .submit{
+
+  .submit {
     padding: 14px;
     font-size: 16px;
   }
@@ -336,7 +367,7 @@ footer i {
   .burger-menu {
     display: none;
   }
-  
+
 }
 
 /* tablet only */
@@ -364,7 +395,8 @@ footer i {
   .barrabuscar {
     margin: 0px;
   }
-  .product-container{
+
+  .product-container {
     width: 48%;
   }
 
@@ -387,4 +419,3 @@ footer i {
     flex-wrap: nowrap;
   }
 }
-

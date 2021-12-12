@@ -20,7 +20,7 @@
             <div class="barrabuscar">
                 <input type="text" placeholder="Buscar productos, marcas">
                 <div class="search-icon">
-                   <button> <i class="fas fa-search fa-lg"></i></button>
+                    <button> <i class="fas fa-search fa-lg"></i></button>
                 </div>
             </div>
             <p class="cuotas"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
@@ -43,63 +43,67 @@
         </nav>
         <div class="burger-menu"> <i class="fas fa-bars"></i>
         </div>
-        <img class="banner" src="/img/images/img-home-banner.jpg" alt="">
+
     </header>
 
-<main>
-    <form class="register-container" action="" method="get">
-        <div class="form-register">
-<input type="text" name="NombreApellido" placeholder="Nombre y apellido" required>
+    <main>
+        <form class="register-container" action="/register" method="get">
+            <div class="form-register">
 
-<input type="text" name="nombreusuario" placeholder="nombre de usuario" required>
+                <input class="border-field" type="text" name="NombreApellido" placeholder="Nombre y apellido" required>
+                <br>
+                <input class="border-field" type="text" name="nombreusuario" placeholder="nombre de usuario" required>
+                <br>
+                <input class="border-field" type="email" name="email" placeholder="E-mail" required>
+                <br>
+                <h4>Fecha de nacimiento</h4>
+                <input class="border-field" type="date" name="fecha" id="birthdate" required>
+                <br>
+                <input class="border-field" type="text" name="domicilio" placeholder="Domicilio">
+                <br>
+                <h4>Perfil de usuario</h4>
+                <input type="radio" name="comprador" value="comprador" id="comprador1">
+                <br>
+                <label for="comprador1">Comprador</label>
+                <br>
+                <input type="radio" name="vendedor" value="vendedor" id="vendedor1">
+                <label for="vendedor1">Vendedor</label>
 
-<input type="email" name="email" placeholder="E-mail" required>
+                <h4>intereses</h4>
 
-<h4>Fecha de nacimiento</h4>
-<input type="date" name="fecha" id="birthdate" required>
+                <input type="checkbox" name="intereses" value="Electro" id="electro">
+                <label for="electro">Electro</label>
+                <br>
+                <input type="checkbox" name="intereses" value="Moda" id="moda">
+                <label for="moda">Moda</label>
+                <br>
+                <input type="checkbox" name="intereses" value="Hogar" id="hogar">
+                <label for="hogar">Hogar</label>
+                <br>
+                <input type="checkbox" name="intereses" value="Jugueteria">
+                <label for="jugueteria">Jugueteria</label>
+                <br>
+                <input type="checkbox" name="intereses" value="Vida sana">
+                <label for="vida sana">Vida sana</label>
+                <br>
+                <label for="photo">Foto de usuario</label>
+                <input type="file" name="userphoto" accept=".jpg">
+                <br>
+                <input class="border-field" type="password" name="userpassword" placeholder="Contraseña" required>
+                <br>
+                <input class="border-field" type="password" name="confirmpassword" placeholder="Confirme la contraseña"
+                    required>
+                <br>
+                <div class="button-register">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </div>
+            </div>
 
-<input type="text" name="domicilio" placeholder="Domicilio">
-
-<h4>Perfil de usuario</h4>
-<input type="radio" name="comprador" value="comprador" id="comprador1">
-<br>
-<label for="comprador1">Comprador</label>
-<br>
-<input type="radio" name="vendedor" value="vendedor" id="vendedor1">
-<label for="vendedor1">Vendedor</label>
-
-<h4>intereses</h4>
-
-<input type="checkbox" name="intereses" value="Electro" id="electro">
-<label for="electro">Electro</label>
-<br>
-<input type="checkbox" name="intereses" value="Moda" id="moda">
-<label for="moda">Moda</label>
-<br>
-<input type="checkbox" name="intereses" value="Hogar" id="hogar">
-<label for="hogar">Hogar</label>
-<br>
-<input type="checkbox" name="intereses" value="Jugueteria">
-<label for="jugueteria">Jugueteria</label>
-<br>
-<input type="checkbox" name="intereses" value="Vida sana">
-<label for="vida sana">Vida sana</label>
-<br>
-<label for="photo">Foto de usuario</label>
-<input type="file" name="userphoto" accept=".jpg">
-<br>
-<input type="password" name="userpassword" placeholder="Contraseña" required>
-<br>
-<input type="password" name="confirmpassword" placeholder="Confirme la contraseña" required>
-<br>
-<button type="submit">Enviar</button>
-<button type="reset">Borrar</button>
-
-</div>
-</form>
+        </form>
 
 
-</main>
+    </main>
 
 
 
@@ -132,21 +136,23 @@
     <footer>
         <article class="piePagina">
             <div class="footer-container">
-            <i class="fas fa-credit-card"></i>
-            <h4>Pagá con tarjeta o en efectivo</h4>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
-                seguro!
-            </p>
-            <i class="fas fa-gift"></i>
-            <h4>Envío gratis desde $ 2.500</h4>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
-                Mercado Puntos.</p>
-            <i class="fas fa-user-shield"></i>
-            <h4>Seguridad, de principio a fin</h4>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
-                protegid@.
-            </p>
-        </div>
+                <i class="fas fa-credit-card"></i>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
+                    siempre es
+                    seguro!
+                </p>
+                <i class="fas fa-gift"></i>
+                <h4>Envío gratis desde $ 2.500</h4>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
+                    beneficio de
+                    Mercado Puntos.</p>
+                <i class="fas fa-user-shield"></i>
+                <h4>Seguridad, de principio a fin</h4>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+                    protegid@.
+                </p>
+            </div>
             <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
         </article>
 
