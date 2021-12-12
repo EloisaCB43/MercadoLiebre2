@@ -261,6 +261,10 @@ footer i {
   flex-direction: column;
   margin-bottom: 20px;
 }
+.login-password a{
+  text-decoration: none;
+  color: #fff;
+}
 
 .username,
 .password {
@@ -314,6 +318,10 @@ footer i {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.button-register a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .button-register button {
