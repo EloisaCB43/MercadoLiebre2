@@ -46,7 +46,60 @@
         <img class="banner" src="/img/images/img-home-banner.jpg" alt="">
     </header>
 
+<main>
+    <form class="register-container" action="" method="get">
+        <div class="form-register">
+<input type="text" name="NombreApellido" placeholder="Nombre y apellido" required>
 
+<input type="text" name="nombreusuario" placeholder="nombre de usuario" required>
+
+<input type="email" name="email" placeholder="E-mail" required>
+
+<h4>Fecha de nacimiento</h4>
+<input type="date" name="fecha" id="birthdate" required>
+
+<input type="text" name="domicilio" placeholder="Domicilio">
+
+<h4>Perfil de usuario</h4>
+<input type="radio" name="comprador" value="comprador" id="comprador1">
+<br>
+<label for="comprador1">Comprador</label>
+<br>
+<input type="radio" name="vendedor" value="vendedor" id="vendedor1">
+<label for="vendedor1">Vendedor</label>
+
+<h4>intereses</h4>
+
+<input type="checkbox" name="intereses" value="Electro" id="electro">
+<label for="electro">Electro</label>
+<br>
+<input type="checkbox" name="intereses" value="Moda" id="moda">
+<label for="moda">Moda</label>
+<br>
+<input type="checkbox" name="intereses" value="Hogar" id="hogar">
+<label for="hogar">Hogar</label>
+<br>
+<input type="checkbox" name="intereses" value="Jugueteria">
+<label for="jugueteria">Jugueteria</label>
+<br>
+<input type="checkbox" name="intereses" value="Vida sana">
+<label for="vida sana">Vida sana</label>
+<br>
+<label for="photo">Foto de usuario</label>
+<input type="file" name="userphoto" accept=".jpg">
+<br>
+<input type="password" name="userpassword" placeholder="Contraseña" required>
+<br>
+<input type="password" name="confirmpassword" placeholder="Confirme la contraseña" required>
+<br>
+<button type="submit">Enviar</button>
+<button type="reset">Borrar</button>
+
+</div>
+</form>
+
+
+</main>
 
 
 
