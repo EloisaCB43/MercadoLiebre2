@@ -245,12 +245,17 @@ la descripción del artículo como elementos de una caja dentro de la
   border-radius: 8px;
   margin: 10px;
   font-size: 20px;
+  transition: background-color 0.08s, color 0.05s;
 }
 
 .submit:hover{
   background-color: #0022AA;
 }
 
+.button-register button:hover{
+background-color: #0022AA;
+transition: background-color 0.08s, color 0.05s;
+}
 /* register */
 
 .register-container {
@@ -267,7 +272,6 @@ la descripción del artículo como elementos de una caja dentro de la
   flex-wrap: wrap;
   flex-direction: column;
   padding: 20px;
-  font-size: 20px;
   border-radius: 5px;
   margin: 10px 0px;
 }
@@ -327,26 +331,23 @@ la descripción del artículo como elementos de una caja dentro de la
 
 /* >>>>>>>>>>>> footer <<<<<<<<<<<<<<<<*/
 
-.piePagina {
+.main-footer{
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
   flex-direction: column;
   align-items: center;
-  background-color: white;
-  text-align: center;
-  width: 100%;
+  font-size: medium;
+  border-top: solid 1px #ebebeb;
 }
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  text-align: center;
-  margin: 10px;
-  margin-bottom: 10px;
-  width: 100%;
+.footer-container{
+display: flex;
+padding: 10px;
+text-align:center;
+}
+
+.each-container{
+margin: 10px 0px;
 }
 
 footer i {
@@ -357,12 +358,15 @@ footer i {
   /* como hacer que los textos queden pegados y no tan separados? */
 }
 
+.author{
+  margin:10px;
+}
 
 
 
 /* mobile only */
 /* desaparece la descripcion, los enlaces y le da al burger margin top */
-@media (max-width: 482px) {
+@media (max-width: 361px) {
   .descriptions {
     font-size: 16px;
     display: none;
@@ -375,13 +379,18 @@ footer i {
   .burger-menu {
     margin-top: 20px;
   }
-
+.border-field{
+  width: 90%;
+}
+.login-password{
+  width: 90%;
+}
  
 }
 
 /* tablet y desktop */
 /* le da sombra a los articulos cuando se expande */
-@media (min-width: 483px) {
+@media (min-width: 362px) {
   .product-container {
     margin-bottom: 10px;
     margin-top: 10px;
@@ -399,7 +408,7 @@ footer i {
 /* tablet only */
 
 
-@media only screen and (min-width:483px) and (max-width:768px) {
+@media only screen and (min-width:361px) and (max-width:769px) {
 
   .main-article {
     display: flex;
@@ -426,10 +435,13 @@ footer i {
     width: 48%;
   }
 
+  .login-password{
+    width: 60%;
+  }
 }
 
 /* desktop */
-@media (min-width:769px) {
+@media (min-width:770px) {
   .main-article {
     display: flex;
     flex-direction: row;
@@ -444,4 +456,17 @@ footer i {
   .img-searchbar-cuotas {
     flex-wrap: nowrap;
   }
+  
+  .each-container{
+  display: flex;
+  justify-content: space-around;
+  }
+  .main-footer{
+    align-items: flex-start;
+    
+  }
+  .login-password{
+    width: 60%;
+  }
+  
 }
