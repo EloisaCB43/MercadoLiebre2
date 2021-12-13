@@ -7,8 +7,15 @@
   box-sizing: border-box;
 }
 
+
+body {
+  font-family: "Roboto";
+}
+
+/* >>>>>>>>>>>> header <<<<<<<<<<<<<<<<< */
+
 body header {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 12px;
   background-color: #eac926;
   color: black;
@@ -17,7 +24,6 @@ body header {
 
 }
 
-/* imagenes */
 .imagenprincipal {
   width: 50%;
 }
@@ -26,42 +32,6 @@ body header {
   display: flex;
 
 }
-
-.banner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  width: 100%;
-}
-
-/* --------- */
-
-body {
-  font-family: Roboto;
-}
-
-.titulares {
-  font-size: 24px;
-  text-align: left;
-  color: #666;
-}
-
-.discount {
-  color: #39b54a;
-  font-size: 1em;
-  /* desafio flex */
-  margin-left: 10px;
-}
-
-.prices {
-  font-size: 18px;
-  /* desafio flex */
-}
-
-.descriptions {
-  font-size: 16px;
-}
-
 .img-searchbar-cuotas {
   display: flex;
   flex-wrap: wrap;
@@ -100,7 +70,15 @@ body {
   margin-right: 5px;
 }
 
-/* enlaces */
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/* header enlaces */
 .enlaces-navbar {
   display: flex;
   flex-wrap: wrap;
@@ -142,8 +120,30 @@ body {
 
 }
 
-/* ejercicio diseño adaptativo */
-/* Debemos centrar la sección main */
+/* >>>>>>>>>>>>> main <<<<<<<<<<<<<<<<*/
+
+.titulares {
+  font-size: 24px;
+  text-align: left;
+  color: #666;
+}
+
+.discount {
+  color: #39b54a;
+  font-size: 1em;
+  /* desafio flex */
+  margin-left: 10px;
+}
+
+.prices {
+  font-size: 18px;
+  /* desafio flex */
+}
+
+.descriptions {
+  font-size: 16px;
+}
+
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -151,14 +151,12 @@ body {
   background-color: #ebebeb;
 }
 
-/* este se aplico a la sección */
 .article-container {
   width: 90%;
   margin: auto;
   padding: 20px;
 }
 
-/* Entre cada artículo hay una separación de 10 píxeles */
 .product-container {
   margin-bottom: 10px;
   margin-top: 10px;
@@ -181,12 +179,11 @@ la descripción del artículo como elementos de una caja dentro de la
   flex-direction: column;
 }
 
-
 .photo {
   width: 100%;
 }
 
-/* diseño del truck */
+/* truck */
 .each-product i {
   display: flex;
   align-self: flex-end;
@@ -202,48 +199,13 @@ la descripción del artículo como elementos de una caja dentro de la
   color: #39b54a;
 }
 
-/* desafio de flex box ---------------------*/
-
 .price-discount {
   display: flex;
   flex-wrap: wrap;
 }
 
+/*>>>>>>>>>>>>>>>> formularios <<<<<<<<<<<<<<<<<<*/
 
-/* footer*/
-
-.piePagina {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  text-align: center;
-  width: 100%;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  text-align: center;
-  margin: 10px;
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-footer i {
-  width: 2em;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: #1259c3;
-  /* como hacer que los textos queden pegados y no tan separados? */
-}
-
-
-/* formularios <<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* login */
 .login-container {
   display: flex;
@@ -283,6 +245,10 @@ footer i {
   border-radius: 8px;
   margin: 10px;
   font-size: 20px;
+}
+
+.submit:hover{
+  background-color: #0022AA;
 }
 
 /* register */
@@ -357,6 +323,40 @@ footer i {
   gap: 10px;
   align-items: center;
 }
+
+
+/* >>>>>>>>>>>> footer <<<<<<<<<<<<<<<<*/
+
+.piePagina {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+footer i {
+  width: 2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #1259c3;
+  /* como hacer que los textos queden pegados y no tan separados? */
+}
+
 
 
 
