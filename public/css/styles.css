@@ -142,6 +142,10 @@ body header {
 
 .descriptions {
   font-size: 16px;
+  visibility: hidden;
+}
+.each-product:hover .descriptions{
+  visibility:visible
 }
 
 .main-container {
@@ -177,6 +181,7 @@ la descripción del artículo como elementos de una caja dentro de la
   text-align: left;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .photo {
@@ -194,14 +199,17 @@ la descripción del artículo como elementos de una caja dentro de la
   border: 1px solid #39b54a;
   background-color: #fff;
   border-radius: 50%;
-  right: 30px;
+  right: 0px;
   top: -15px;
-  color: #39b54a;
+  color: #39b54a; 
+  align-items: center;
+  position: absolute;
 }
 
 .price-discount {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 /*>>>>>>>>>>>>>>>> formularios <<<<<<<<<<<<<<<<<<*/
@@ -258,6 +266,12 @@ transition: background-color 0.08s, color 0.05s;
 }
 /* register */
 
+.home-link{
+  width: 30%;
+}
+.home-link .imagenprincipal{
+  width: 100%;
+}
 .register-container {
   display: flex;
   flex-wrap: wrap;
@@ -385,6 +399,12 @@ footer i {
 .login-password{
   width: 90%;
 }
+ .home-link{
+   width: 50%;
+ }
+ .barrabuscar{
+   width: 47%;
+ }
  
 }
 
@@ -408,7 +428,7 @@ footer i {
 /* tablet only */
 
 
-@media only screen and (min-width:361px) and (max-width:769px) {
+@media only screen and (min-width:362px) and (max-width:769px) {
 
   .main-article {
     display: flex;
@@ -417,8 +437,19 @@ footer i {
 
   }
 
+.enlaces-navbar{
+  justify-content: space-between;
+
+}
+
+.seccion-principal{
+padding: 11px 7px;
+}
+.listaEnlaces {
+  gap:11px;
+}
   .cuotas {
-    width: 33%;
+    width: 36%;
     margin: 0;
     overflow: hidden;
   }
@@ -448,6 +479,14 @@ footer i {
     gap: 20px;
   }
 
+  .enlaces-navbar{
+    justify-content: space-around;
+    gap: 187px;
+  }
+  .listaEnlaces{
+    gap: 10px;
+  }
+
   .imagenprincipal {
     width: 50%;
     height: 80px;
@@ -461,6 +500,7 @@ footer i {
   display: flex;
   justify-content: space-around;
   }
+
   .main-footer{
     align-items: flex-start;
     
