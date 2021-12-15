@@ -13,39 +13,43 @@
 </head>
 
 <body>
+    <!-- cabecera de la imagen -->
     <header class="seccion-principal">
-        <!-- cabecera de la imagen -->
-        <div class="img-searchbar-cuotas">
-           <a class="home-link" href="/" ><img class="imagenprincipal" src="/img/images/logo-mercado-liebre.svg" alt=""></a>
-            <div class="barrabuscar">
-                <input type="text" placeholder="Buscar productos, marcas">
-                <div class="search-icon">
-                    <button> <i class="fas fa-search fa-lg"></i></button>
+        
+        <div class="main-header">
+            <div class="img-searchbar-cuotas">
+               <a href="/"><img class="imagenprincipal" src="/img/images/logo-mercado-liebre.svg" alt=""></a> 
+                <div class="barrabuscar">
+                    <input class="search-button" type="text" placeholder="Buscar productos, marcas">
+                    <div class="search-icon">
+                        <button> <i class="fas fa-search fa-lg"></i></button>
+                    </div>
                 </div>
+                <p class="cuotas"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
-            <p class="cuotas"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+
+            <nav class="enlaces-navbar">
+                <ul class="listaEnlaces-a">
+
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+
+                </ul>
+                <ul class="listaEnlaces-b">
+                   <div><li><a href="/register">Creá tu cuenta<i class="far fa-id-card"></i></a></li></div> 
+                    <li><a href="/login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis Compras<i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                 <i class="fas fa-bars"></i></div>
         </div>
 
-        <nav class="enlaces-navbar">
-            <ul class="listaEnlaces">
-
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-
-            </ul>
-            <ul class="listaEnlaces">
-                <li><a href="/register">Creá tu cuenta<i class="far fa-id-card"></i></a>
-                </li>
-                <li><a href="/login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="#">Mis Compras<i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
-        </nav>
-        <div class="burger-menu"> <i class="fas fa-bars"></i></div>
     </header>
     <div>
-        <img class="banner" src="/img/images/img-home-banner.jpg" alt="">
+     <img class="banner" src="/img/images/img-home-banner.jpg" alt="">
     </div>
 
 
@@ -66,9 +70,9 @@
         </div>
     </main>
 
-    <!-- <<<<<<<< footer >>>>>>>>>>>> -->
+     <!-- <<<<<<<< footer >>>>>>>>>>>> -->
 
-    <footer class="main-footer">
+     <footer class="main-footer">
         <article class="footer-container">
             <div class="each-container">
 

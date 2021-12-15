@@ -212,12 +212,6 @@
     position: absolute;
     right: 20px;
     top: -15px;
-    color: #39b54a;
-}
-.product-container i:hover{
-        transform: rotatez(-90deg);
-        transition: all 1200mss;
-
 }
 
 
@@ -570,9 +564,6 @@
 
     .login-password {
         width: 60%;
-    }
-    .article-container{
-        margin: 30px;
     }
 
 }
